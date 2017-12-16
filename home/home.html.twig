@@ -1,0 +1,60 @@
+{% if content.header %}
+  <section class="home-header">
+    {{ content.header }}
+  </section>
+{% endif %}
+{% if content.body1 %}
+  <div class="section-anchor" id="services"></div>
+  <section class="home-section-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          {{ content.body1 }}
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}
+{% if content.body2 %}
+  <div class="section-anchor" id="issues"></div>
+  <section class="home-section-2">
+    <div class="page-banner--scrim"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          {{ content.body2 }}
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}
+{% if content.body3 %}
+  <div class="section-anchor" id="actions"></div>
+  <section class="home-section-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          {{ content.body3 }}
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}
+{% if content.body4 %}
+  <div class="section-anchor" id="about"></div>
+  <section class="home-section-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          {{ content.body4 }}
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}
+{% if content.footer %}
+  <div class="section-anchor" id="feedback"></div>
+  <section class="home-footer">
+    {{ content.footer }}
+  </section>
+{% endif %}

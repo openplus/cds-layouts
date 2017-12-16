@@ -1,0 +1,25 @@
+<div class="topic-header">
+  {% if content.header %}
+    {{ content.header }}
+  {% endif %}
+</div>
+<div class="container">
+  <div class="row">
+    {% if content.body %}
+      {% if content.sidebar %}
+        <div class="topic-body col-md-9">
+          {{ content.body }}
+        </div>
+      {% else %}
+      <div class="topic-body col-md-12">
+        {{ content.body }}
+      </div>
+      {% endif %}
+    {% endif %}
+    {% if content.sidebar %}
+      <div class="topic-sidebar col-md-3">
+        {{ content.sidebar }}
+      </div>
+    {% endif %}
+  </div>
+</div>

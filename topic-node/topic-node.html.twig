@@ -1,0 +1,36 @@
+{% if content.header %}
+  <div class="topic-header">
+    {{ content.header }}
+  </div>
+{% endif %}
+<div class="container">
+  <div class="row">
+    <div class="topic-body col-md-12">
+      <div class="row">
+        {% if content.sidebar %}
+          <div class="col-md-9">
+            {% if content.body %}
+              {{ content.body }}
+            {% endif %}
+          </div>
+        {% else %}
+          <div class="col-md-12">
+            {% if content.body %}
+              {{ content.body }}
+            {% endif %}
+          </div>
+        {% endif %}
+        {% if content.sidebar %}
+          <div class="col-md-3">
+            {{ content.sidebar }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% if content.footer %}
+  <div class="topic-footer">
+    {{ content.footer }}
+  </div>
+{% endif %}
